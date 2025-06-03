@@ -102,6 +102,102 @@
 
     // Start your code here
     // You may move this JS to another file if you wish
+
+    // Console Log
+    errorBtns[0].addEventListener("click", function handleBtnClick() {
+      console.log("Console Log Demo");
+    });
+
+    // Console Error
+    errorBtns[1].addEventListener("click", function handleBtnClick() {
+      console.error("Console Error Demo");
+    });
+
+    // Console Count
+    errorBtns[2].addEventListener("click", function handleBtnClick() {
+      console.count("Count Button: ");
+    });
+
+    // Console Warn
+    errorBtns[3].addEventListener("click", function handleBtnClick() {
+      console.warn("Console Warn Button");
+    });
+
+    // Console Assert
+    errorBtns[4].addEventListener("click", function handleBtnClick() {
+      const number = 2;
+      const errorMsg = 'The number does not equal 3';
+      console.assert(number === 3, {number, errorMsg});
+    });
+
+    // Console Clear
+    errorBtns[5].addEventListener("click", function handleBtnClick() {
+      console.clear();
+    });
+
+    // Console Dir
+    errorBtns[6].addEventListener("click", function handleBtnClick() {
+      console.dir(errorBtns[6]);
+    });
+
+    // Console dirxml
+    errorBtns[7].addEventListener("click", function handleBtnClick() {
+      console.dirxml(errorBtns[6]);
+    });
+
+    // Console Group Start
+    errorBtns[8].addEventListener("click", function handleBtnClick() {
+      console.group();
+    });
+
+    // Console Group End
+    errorBtns[9].addEventListener("click", function handleBtnClick() {
+      console.groupEnd();
+    });
+
+    // Console Table
+    errorBtns[10].addEventListener("click", function handleBtnClick() {
+      const swe = [
+      {
+        name: 'Software Engineering',
+        num: '110',
+      },
+      {
+        name: 'Programming Languages',
+        num: '130',
+      },
+      {
+        name: 'Advanced Software Engineering',
+        num: '112',
+      }
+    ];
+    console.table(swe);
+    });
+
+    // Start Timer
+    errorBtns[11].addEventListener("click", function handleBtnClick() {
+      console.time("Timer Button");
+    });
+
+    // End Timer
+    errorBtns[12].addEventListener("click", function handleBtnClick() {
+      console.timeEnd("Timer Button");
+    });
+
+    // Console Trace
+    errorBtns[13].addEventListener("click", function handleBtnClick() {
+      const deep = () => { deeper(); };
+      const deeper = () => { deepest(); };
+      const deepest = () => { console.trace(); };
+      deep();
+    });
+
+    // Trigger a Global Error
+    errorBtns[14].addEventListener("click", function handleBtnClick() {
+      const error = boom;
+    });
+
+
   </script>
 </body>
 
