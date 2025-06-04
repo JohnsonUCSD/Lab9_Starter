@@ -87,6 +87,14 @@
     </section>
   </main>
 
+  <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+  <script>
+    window.TrackJS && TrackJS.install({ 
+      token: "aef171789ec44b108ceaf06f1624910c"
+      // for more configuration options, see https://docs.trackjs.com
+    });
+  </script>
+
   <script>
     class CustomError extends Error {
       constructor(message) {
@@ -219,7 +227,6 @@
     window.addEventListener("error", ()=> {
       console.log("Sadly an error happened my friend");
     });
-
   </script>
 </body>
 
